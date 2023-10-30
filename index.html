@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="categories" id="categories"></div>
+
+    <div class="filters">
+        <label for="sort-select">Sırala:</label>
+        <select id="sort-select" onchange="sortProducts()">
+            <option value="price">Price high</option>
+            <option value="rating">Raiting high</option>
+        </select>
+    </div>
+
+    <div class="products" id="products"></div>
+
+    <div class="basket" id="basket">
+        <h2>Basket</h2>
+        <ul id="basket-items"></ul>
+        <button onclick="emptyBasket()">Basket Delete</button>
+    </div>
+
+    <div class="favorites" id="favorites">
+        <h2>Favorites</h2>
+        <ul id="favorite-items"></ul>
+        <button onclick="emptyFavorite()">Favorite Delete</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+</body>
+</html>
